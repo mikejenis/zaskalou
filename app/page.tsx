@@ -98,7 +98,7 @@ function FeaturedEvent({ event }: { event: PublicEvent }) {
           Přidat do kalendáře
         </a>
         <a className="btn-ghost" href={event.sources[0].url} target="_blank" rel="noopener noreferrer">
-          Ověřený zdroj ↗
+          Detail ↗
         </a>
       </div>
     </div>
@@ -141,7 +141,7 @@ export default function Home() {
       <nav className="site-nav">
         <div className="site-nav-inner">
           <span className="site-wordmark">Za Skálou</span>
-          <span className="nav-eyebrow">Ověřený přehled</span>
+          <span className="nav-eyebrow">Přehled</span>
         </div>
       </nav>
 
@@ -149,7 +149,7 @@ export default function Home() {
         {/* Hero */}
         <header className="hero">
           <div className="hero-text">
-            <p className="hero-eyebrow">Ověřený koncertní přehled</p>
+            <p className="hero-eyebrow">Koncertní přehled</p>
             <h1>Za Skálou</h1>
             <p className="hero-subtitle">
               Veřejný archiv a aktuální přehled živých vystoupení, kde je doložené zapojení
