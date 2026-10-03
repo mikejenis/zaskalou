@@ -1,32 +1,33 @@
-/* ─── Design Tokens ─────────────────────────────────────────────────────── */
+/* ─── Design Tokens (DESIGN.md — Airbnb-inspired, adapted for Za Skálou) ── */
 :root {
   color-scheme: light;
 
-  /* Surfaces */
-  --bg:             #f7f4ef;
-  --canvas:         #fffdfa;
-  --surface-soft:   #f2ede6;
-  --surface-strong: #ede8e0;
+  /* Surfaces — from DESIGN.md */
+  --bg:             #f7f7f7;  /* surface-soft */
+  --canvas:         #ffffff;  /* canvas */
+  --surface-soft:   #f7f7f7;  /* surface-soft */
+  --surface-strong: #f2f2f2;  /* surface-strong */
 
-  /* Typography */
-  --ink:            #1d1a16;
-  --body:           #3a3330;
-  --muted:          #686057;
-  --muted-soft:     #9a9087;
+  /* Typography — from DESIGN.md */
+  --ink:            #222222;  /* ink */
+  --body:           #3f3f3f;  /* body */
+  --muted:          #6a6a6a;  /* muted */
+  --muted-soft:     #929292;  /* muted-soft */
 
-  /* Accent — warm terracotta, restrained */
-  --accent:         #c05328;
-  --accent-active:  #a8471f;
-  --accent-light:   #f5e0d6;
+  /* Accent — warm terracotta (Za Skálou adaptation; DESIGN.md primary #ff385c
+     is Airbnb's brand Rausch — not appropriate for Czech folk music context) */
+  --accent:         #b84c2b;
+  --accent-active:  #9e3f22;
+  --accent-light:   #fde8e0;
 
-  /* Borders */
-  --hairline:       #d8d0c5;
-  --hairline-soft:  #e8e2da;
+  /* Borders — from DESIGN.md */
+  --hairline:       #dddddd;  /* hairline */
+  --hairline-soft:  #ebebeb;  /* hairline-soft */
 
-  /* Shadows */
+  /* Shadows — from DESIGN.md (single tier) */
   --shadow-card:    rgba(0, 0, 0, 0.02) 0 0 0 1px,
                     rgba(0, 0, 0, 0.04) 0 2px 6px 0,
-                    rgba(0, 0, 0, 0.08) 0 4px 8px 0;
+                    rgba(0, 0, 0, 0.10) 0 4px 8px 0;
 
   /* Spacing */
   --space-xxs:  2px;
@@ -125,6 +126,14 @@ ol, ul {
 /* ─── Hero ───────────────────────────────────────────────────────────────── */
 .hero {
   padding: var(--space-section) 0 var(--space-xxl);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-xxl);
+  align-items: center;
+}
+
+.hero-text {
+  min-width: 0;
 }
 
 .hero-eyebrow {
@@ -150,8 +159,25 @@ ol, ul {
   font-weight: 400;
   line-height: 1.6;
   color: var(--muted);
-  max-width: 520px;
+  max-width: 440px;
   margin: 0;
+}
+
+.hero-photo-wrap {
+  flex-shrink: 0;
+  width: 280px;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.hero-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
 }
 
 /* ─── Section Labels ─────────────────────────────────────────────────────── */
@@ -553,6 +579,21 @@ ol, ul {
 
 /* ─── Responsive ─────────────────────────────────────────────────────────── */
 @media (max-width: 680px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .hero-photo-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    order: -1;
+  }
+
+  .hero-photo-wrap img {
+    object-position: center 20%;
+  }
+
   .featured-card {
     grid-template-columns: 1fr;
     gap: var(--space-lg);

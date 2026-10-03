@@ -148,12 +148,22 @@ export default function Home() {
       <main className="page-wrap">
         {/* Hero */}
         <header className="hero">
-          <p className="hero-eyebrow">Ověřený koncertní přehled</p>
-          <h1>Za Skálou</h1>
-          <p className="hero-subtitle">
-            Veřejný archiv a aktuální přehled živých vystoupení, kde je doložené zapojení
-            Františka Skály nebo jeho hudebních projektů.
-          </p>
+          <div className="hero-text">
+            <p className="hero-eyebrow">Ověřený koncertní přehled</p>
+            <h1>Za Skálou</h1>
+            <p className="hero-subtitle">
+              Veřejný archiv a aktuální přehled živých vystoupení, kde je doložené zapojení
+              Františka Skály nebo jeho hudebních projektů.
+            </p>
+          </div>
+          <div className="hero-photo-wrap">
+            <img
+              src="/frantisek-skala.webp"
+              alt="František Skála"
+              width={280}
+              height={350}
+            />
+          </div>
         </header>
 
         {/* Next Concert */}
