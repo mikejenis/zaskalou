@@ -21,7 +21,10 @@ const PROJECT_PATTERNS = [
     project: "František Skála & Provodovjané",
     pattern: /franti[sš]ek\s+sk[aá]la.{0,80}provodovjan[eé]|provodovjan[eé].{0,80}franti[sš]ek\s+sk[aá]la/i
   },
-  { project: "M.T.O. Universal Praha", pattern: /m\.?\s*t\.?\s*o\.?\s+universal/i },
+  {
+    project: "M.T.O. Universal Praha",
+    pattern: /franti[sš]ek\s+sk[aá]la.{0,160}(m\.?\s*t\.?\s*o\.?\s+universal|mal[yý]\s+tane[cč]n[ií]\s+orchestr\s+universal)|(m\.?\s*t\.?\s*o\.?\s+universal|mal[yý]\s+tane[cč]n[ií]\s+orchestr\s+universal).{0,160}franti[sš]ek\s+sk[aá]la/i
+  },
   { project: "Finský Barok", pattern: /finsk[yý]\s+barok/i },
   { project: "František Skála", pattern: /franti[sš]ek\s+sk[aá]la/i }
 ];
@@ -153,6 +156,10 @@ function existingKeys(candidates: EventCandidate[]): Set<string> {
   return new Set([...events.map((event) => buildDedupeKey(event)), ...candidates.map((candidate) => buildDedupeKey(candidate))]);
 }
 
+function existingIds(candidates: EventCandidate[]): Set<string> {
+  return new Set([...events.map((event) => event.id), ...candidates.map((candidate) => candidate.id)]);
+}
+
 function existingSourceUrls(candidates: EventCandidate[]): Set<string> {
   return new Set([
     ...events.flatMap((event) => event.sources.map((source) => source.url)),
@@ -215,6 +222,7 @@ async function main(): Promise<void> {
   const discoveredAt = new Date().toISOString();
   const currentCandidates = candidatesJson as EventCandidate[];
   const keys = existingKeys(currentCandidates);
+  const ids = existingIds(currentCandidates);
   const sourceUrls = existingSourceUrls(currentCandidates);
   const updatedCandidates = [...currentCandidates];
   const newCandidates: EventCandidate[] = [];
@@ -232,6 +240,17 @@ async function main(): Promise<void> {
         continue;
       }
 
+      if (ids.has(candidate.id)) {
+        const existingById = updatedCandidates.find((item) => item.id === candidate.id);
+        if (existingById) {
+          existingById.sources = mergeSources(existingById.sources, candidate.sources);
+          for (const source of candidate.sources) {
+            sourceUrls.add(source.url);
+          }
+        }
+        continue;
+      }
+
       const existing = updatedCandidates.find((item) => buildDedupeKey(item) === key);
       if (existing) {
         existing.sources = mergeSources(existing.sources, candidate.sources);
@@ -246,6 +265,7 @@ async function main(): Promise<void> {
       }
 
       keys.add(key);
+      ids.add(candidate.id);
       sourceUrls.add(candidate.sourceUrl);
       updatedCandidates.push(candidate);
       newCandidates.push(candidate);
