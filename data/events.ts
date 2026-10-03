@@ -20,7 +20,7 @@ export const events: PublicEvent[] = [
   },
   {
     "id": "2026-12-04-palac-akropolis-prague-frantisek-skala-and-traskava-smes-frantisek-skala-and-traskava",
-    "title": "FRANTIŠEK SKÁLA & TŘASKAVÁ SMĚS ► KŘEST NOVÉHO ALBA ZKLAMAL",
+    "title": "František Skála & Třaskavá směs – křest nového alba Zklamal",
     "project": "František Skála & Třaskavá směs",
     "date": "2026-12-04",
     "startTime": "19:30",

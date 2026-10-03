@@ -65,11 +65,11 @@ function EventCard({ event }: { event: PublicEvent }) {
         <div className="event-actions">
           {event.ticketUrl && (
             <a className="btn-primary" href={event.ticketUrl} target="_blank" rel="noopener noreferrer">
-              Lístky
+              Vstupenky
             </a>
           )}
           <a className="btn-secondary" href={createGoogleCalendarUrl(event)} target="_blank" rel="noopener noreferrer">
-            Kalendář
+            Do kalendáře
           </a>
           <a className="btn-ghost" href={event.sources[0].url} target="_blank" rel="noopener noreferrer">
             Zdroj ↗
@@ -93,14 +93,14 @@ function FeaturedEvent({ event }: { event: PublicEvent }) {
       <div className="featured-actions">
         {event.ticketUrl && (
           <a className="btn-primary" href={event.ticketUrl} target="_blank" rel="noopener noreferrer">
-            Koupit lístky
+            Vstupenky
           </a>
         )}
         <a className="btn-secondary" href={createGoogleCalendarUrl(event)} target="_blank" rel="noopener noreferrer">
           Přidat do kalendáře
         </a>
         <a className="btn-ghost" href={event.sources[0].url} target="_blank" rel="noopener noreferrer">
-          Detail ↗
+          Ověřit u pořadatele ↗
         </a>
       </div>
     </div>
@@ -143,7 +143,7 @@ export default function Home() {
       <nav className="site-nav">
         <div className="site-nav-inner">
           <span className="site-wordmark">Za Skálou</span>
-          <span className="nav-eyebrow">Přehled</span>
+          <span className="nav-eyebrow">Živé koncerty</span>
         </div>
       </nav>
 
@@ -151,11 +151,11 @@ export default function Home() {
         {/* Hero */}
         <header className="hero">
           <div className="hero-text">
-            <p className="hero-eyebrow">Koncertní přehled</p>
+            <p className="hero-eyebrow">František Skála naživo</p>
             <h1>Za Skálou</h1>
             <p className="hero-subtitle">
-              Veřejný archiv a aktuální přehled živých vystoupení, kde je doložené zapojení
-              Františka Skály nebo jeho hudebních projektů.
+              Přehled doložených koncertů a živých večerů, kde se potkává František Skála
+              se svými hudebními projekty, kapelami a hosty.
             </p>
           </div>
           <div className="hero-photo-wrap">
@@ -171,7 +171,7 @@ export default function Home() {
         {/* Next Concert */}
         {(filteredNext ?? (!activeProject && nextConcert)) && (
           <section className="featured-section" aria-labelledby="next-concert-label">
-            <p className="section-label" id="next-concert-label">Příští koncert</p>
+            <p className="section-label" id="next-concert-label">Nejbližší vystoupení</p>
             <FeaturedEvent event={filteredNext ?? nextConcert!} />
           </section>
         )}
@@ -179,7 +179,7 @@ export default function Home() {
         {/* Upcoming Concerts */}
         <section className="page-section" aria-labelledby="upcoming-label">
           <div className="section-head">
-            <h2 id="upcoming-label">Nadcházející koncerty</h2>
+            <h2 id="upcoming-label">Kam za Skálou</h2>
             {projects.length > 1 && (
               <div className="filter-row" role="group" aria-label="Filtrovat projekt">
                 <button
@@ -204,8 +204,8 @@ export default function Home() {
           {filteredRest.length === 0 && !filteredNext ? (
             <div className="empty-state">
               {upcoming.length === 0
-                ? "Zatím nejsou schválené žádné nadcházející termíny."
-                : "Žádné další termíny pro vybraný projekt."}
+                ? "Zatím nemáme ověřený žádný nadcházející termín."
+                : "Pro vybraný projekt teď nemáme další ověřený termín."}
             </div>
           ) : (
             <ol className="event-list">
@@ -220,7 +220,7 @@ export default function Home() {
         {past.length > 0 && (
           <section className="page-section past-section" aria-labelledby="past-label">
             <div className="section-head">
-              <h2 id="past-label">Minulé koncerty</h2>
+              <h2 id="past-label">Odehráno</h2>
             </div>
             <ol className="event-list">
               {past.map((event) => (
@@ -233,10 +233,10 @@ export default function Home() {
         {/* Missing Concert Submission */}
         <section className="page-section" aria-labelledby="submission-label">
           <div className="submission-section">
-            <h2 id="submission-label">Chybí vám nějaký termín?</h2>
+            <h2 id="submission-label">Víte o dalším vystoupení?</h2>
             <p>
-              Pokud víte o vystoupení, které tu není, napište nám. Každý přidaný termín
-              ověřujeme a dohledáváme zdroj.
+              Pošlete tip s odkazem na program, klub, pořadatele nebo kapelu. Na web patří
+              jen termíny, které se dají ověřit u důvěryhodného zdroje.
             </p>
             <a
               className="btn-primary"
@@ -244,7 +244,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Nahlásit chybějící termín
+              Poslat tip na koncert
             </a>
           </div>
         </section>
@@ -253,7 +253,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="site-footer">
         <div className="site-footer-inner">
-          <p className="footer-copy">© {new Date().getFullYear()} Za Skálou. Data ověřena ze zdrojů.</p>
+          <p className="footer-copy">© {new Date().getFullYear()} Za Skálou. Termíny držíme u ověřených zdrojů.</p>
           <a
             className="footer-link"
             href="https://github.com/michaeljenis/zaskalou"

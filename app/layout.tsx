@@ -3,7 +3,7 @@ import "./styles.css";
 
 export const metadata: Metadata = {
   title: "Za Skálou",
-  description: "Koncerty a vystoupení spojené s Františkem Skálou."
+  description: "Ověřený přehled koncertů a živých vystoupení Františka Skály a jeho hudebních projektů."
 };
 
 export const viewport: Viewport = {
