@@ -240,7 +240,7 @@ export default function Home() {
             </p>
             <a
               className="btn-primary"
-              href="https://github.com/sauwage/zaskalou/issues/new?title=Chyb%C4%9Bj%C3%ADc%C3%AD+term%C3%ADn"
+              href="https://github.com/mikejenis/zaskalou/issues/new?title=Chyb%C4%9Bj%C3%ADc%C3%AD+term%C3%ADn"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -256,7 +256,7 @@ export default function Home() {
           <p className="footer-copy">© {new Date().getFullYear()} Za Skálou. Termíny držíme u ověřených zdrojů.</p>
           <a
             className="footer-link"
-            href="https://github.com/michaeljenis/zaskalou"
+            href="https://github.com/mikejenis/zaskalou"
             target="_blank"
             rel="noopener noreferrer"
           >

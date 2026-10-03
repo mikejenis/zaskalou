@@ -200,7 +200,7 @@ function renderSummary(newCandidates: EventCandidate[], publishedEvents: PublicE
 async function fetchSource(source: WatchlistSource): Promise<string> {
   const response = await fetch(source.url, {
     headers: {
-      "user-agent": "ZaSkalouBot/1.0 (+https://github.com/sauwage/zaskalou)"
+      "user-agent": "ZaSkalouBot/1.0 (+https://github.com/mikejenis/zaskalou)"
     }
   });
 
