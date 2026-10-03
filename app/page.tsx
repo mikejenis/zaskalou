@@ -160,7 +160,7 @@ export default function Home() {
           </div>
           <div className="hero-photo-wrap">
             <img
-              src={`${BASE_PATH}/frantisek-skala.jpg`}
+              src={`${BASE_PATH}/frantisek-skala.webp`}
               alt="František Skála"
               width={280}
               height={350}
