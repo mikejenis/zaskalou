@@ -1,9 +1,14 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./styles.css";
 
 export const metadata: Metadata = {
   title: "Za Skálou",
   description: "Ověřené koncerty a vystoupení spojené s Františkem Skálou."
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
