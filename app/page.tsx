@@ -5,6 +5,8 @@ import { events } from "../data/events";
 import { createGoogleCalendarUrl, formatEventDate } from "../lib/calendar";
 import type { PublicEvent } from "../data/schema";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const CZECH_MONTHS: Record<string, string> = {
   "01": "ledna", "02": "února", "03": "března", "04": "dubna",
   "05": "května", "06": "června", "07": "července", "08": "srpna",
@@ -158,7 +160,7 @@ export default function Home() {
           </div>
           <div className="hero-photo-wrap">
             <img
-              src="/frantisek-skala.jpg"
+              src={`${BASE_PATH}/frantisek-skala.jpg`}
               alt="František Skála"
               width={280}
               height={350}

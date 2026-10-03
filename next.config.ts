@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   output: "export",
   reactStrictMode: true,
   basePath: isGithubPages ? "/zaskalou" : undefined,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubPages ? "/zaskalou" : ""
+  },
   turbopack: {
     root: process.cwd()
   }
