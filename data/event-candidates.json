@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "id": "unknown-date-frantisek-skala-and-traskava-smes-frantisek-skala-and-traskava-smes-krest-noveho-al",
+    "title": "František Skála & Třaskavá směs: křest nového alba ZKLAMAL Palác Akropolis , Praha pá 4. 12. 19:30 Vstupenky Zobrazit da",
+    "project": "František Skála & Třaskavá směs",
+    "date": null,
+    "startTime": "19:30",
+    "city": null,
+    "venue": null,
+    "ticketUrl": null,
+    "sourceUrl": "https://goout.net/cs/traskava-smes/pzthyhg/",
+    "sourceName": "GoOut – Třaskavá směs",
+    "sourceType": "aggregator",
+    "sources": [
+      {
+        "name": "GoOut – Třaskavá směs",
+        "url": "https://goout.net/cs/traskava-smes/pzthyhg/"
+      },
+      {
+        "name": "Palác Akropolis – program",
+        "url": "https://www.palacakropolis.cz/"
+      }
+    ],
+    "discoveredAt": "2026-10-04T10:17:08.842Z",
+    "confidence": "medium",
+    "evidence": "Třaskavá směs - Nejbližší koncerty a vstupenky 2026 - GoOut Hledat Třaskavá směs Třaskavá směs je hudebním projektem Františka Skály, ve složení František Skála (zpěv a kytara), Petr Nikl (ukulele), Šimon Jakubíček (kontrabas), a Miroslav Černý (housle). První album kapely nese příznačné jméno Debut . První sólový koncert tohoto seskupení se uskutečnil na filmovém festivalu ve Slavonicích. František Skála tehdy vyzval Petra Nikla, který ho občas doprovázel na večírcích na svou balkánskou „Bisern",
+    "status": "unverified"
+  },
+  {
+    "id": "unknown-date-frantisek-skala-and-provodovjane-frantisek-skala-and-provodovjane-goout-hledat-fran",
+    "title": "František Skála & Provodovjané - GoOut Hledat František Skála & Provodovjané František Skála, výtvarník a ilustrátor, se",
+    "project": "František Skála & Provodovjané",
+    "date": null,
+    "startTime": null,
+    "city": null,
+    "venue": null,
+    "ticketUrl": null,
+    "sourceUrl": "https://goout.net/cs/frantisek-skala-and-provodovjane/ezbswhh/",
+    "sourceName": "GoOut – František Skála & Provodovjané",
+    "sourceType": "aggregator",
+    "sources": [
+      {
+        "name": "GoOut – František Skála & Provodovjané",
+        "url": "https://goout.net/cs/frantisek-skala-and-provodovjane/ezbswhh/"
+      }
+    ],
+    "discoveredAt": "2026-10-04T10:17:08.842Z",
+    "confidence": "medium",
+    "evidence": "František Skála & Provodovjané - GoOut Hledat František Skála & Provodovjané František Skála, výtvarník a ilustrátor, se kromě své tradiční pracovní náplně veřejnosti představuje také jako textař a hudebník, kdy své zemité texty předkládá ve formě oblíbené i znevažované dechovky, která mu podle jeho slov byla přidělena. „Na nenáviděné dechovce, kterou nás – máničky – krmili komunisti, není ve skutečnosti nic špatného. Ostatně, tak je to s každým žánrem. Musí se jen správně uchopit, vystihnout je",
+    "status": "unverified"
+  },
+  {
+    "id": "2026-03-01-frantisek-skala-and-provodovjane-frantisek-skala-and-provodovjane-predvanocni-koncert",
+    "title": "František Skála & Provodovjané – předvánoční koncert s tancovačkou Koupit lístek Více informací 03.12 - 19.00 Žalman & s",
+    "project": "František Skála & Provodovjané",
+    "date": "2026-03-01",
+    "startTime": "06:10",
+    "city": null,
+    "venue": null,
+    "ticketUrl": null,
+    "sourceUrl": "https://www.kdbarikadniku.cz/",
+    "sourceName": "Kulturní dům Barikádníků – program",
+    "sourceType": "venue",
+    "sources": [
+      {
+        "name": "Kulturní dům Barikádníků – program",
+        "url": "https://www.kdbarikadniku.cz/"
+      }
+    ],
+    "discoveredAt": "2026-10-04T10:17:08.842Z",
+    "confidence": "high",
+    "evidence": "Kulturní dům Barikádníků | Koncerty, plesy a akce Praha 10 Přejít na hlavní obsah Přejít k zápatí Otevře se na nové kartě Program Předprodej Aktuálně Fotogalerie Karta seniora Kontakt 06.10 - 20.00 Sváteční pop Koupit lístek Více informací 08.10 - 20.00 Harlej Koupit lístek Více informací 22.10 - 19.00 Synkopy 61 &#8211; 65 let na scéně Koupit lístek Více informací 09.11 - 20.00 Luboš Pospíšil a 5P &#8211; 40 let alba.. A nestřílejte na milence Koupit lístek Více informací 13.11 - 20.00 The Plas",
+    "status": "unverified"
+  },
+  {
+    "id": "2021-06-23-frantisek-skala-and-provodovjane-frantisek-skala-and-provodovjane-rock-for-people-202",
+    "title": "František Skála & Provodovjané - Rock for People 2025 - Dechovka Otev&#345;&iacute;t na YouTube S tátou na rybách - Smok",
+    "project": "František Skála & Provodovjané",
+    "date": "2021-06-23",
+    "startTime": null,
+    "city": null,
+    "venue": null,
+    "ticketUrl": null,
+    "sourceUrl": "https://provodovjane.cz/",
+    "sourceName": "Provodovjané",
+    "sourceType": "artist",
+    "sources": [
+      {
+        "name": "Provodovjané",
+        "url": "https://provodovjane.cz/"
+      }
+    ],
+    "discoveredAt": "2026-10-04T10:17:08.842Z",
+    "confidence": "high",
+    "evidence": "Dechová hudba Provodovjané | Dechovka z Provodova Provodovjané Dechová hudba z Provodova Menu Domů O nás Kalendář akcí Kontakt Dechov&aacute; hudba Provodovjan&eacute; Dechov&aacute; hudba Provodovjan&eacute; je tradi&#269;n&iacute; dechovka z Provodova u Luha&#269;ovic. Hrajeme plesy, pout&#283;, hody, slavnosti i samostatn&eacute; koncerty. Reperto&aacute;r stav&iacute;me tak, aby si p&#345;i&scaron;li na sv&eacute; poslucha&#269;i dechovky i publikum, kter&eacute; m&aacute; r&aacute;do ne&#26",
+    "status": "unverified"
+  }
+]
