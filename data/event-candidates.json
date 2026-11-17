@@ -94,5 +94,28 @@
     "confidence": "high",
     "evidence": "Dechová hudba Provodovjané | Dechovka z Provodova Provodovjané Dechová hudba z Provodova Menu Domů O nás Kalendář akcí Kontakt Dechov&aacute; hudba Provodovjan&eacute; Dechov&aacute; hudba Provodovjan&eacute; je tradi&#269;n&iacute; dechovka z Provodova u Luha&#269;ovic. Hrajeme plesy, pout&#283;, hody, slavnosti i samostatn&eacute; koncerty. Reperto&aacute;r stav&iacute;me tak, aby si p&#345;i&scaron;li na sv&eacute; poslucha&#269;i dechovky i publikum, kter&eacute; m&aacute; r&aacute;do ne&#26",
     "status": "unverified"
+  },
+  {
+    "id": "2026-12-04-frantisek-skala-and-traskava-smes-frantisek-skala-and-traskava-smes-skupina-nadmerne-",
+    "title": "František Skála & Třaskavá směs Skupina nadměrně hravých umělců – František Skála, Petr Nikl, Miroslav Černý a Petr Tich",
+    "project": "František Skála & Třaskavá směs",
+    "date": "2026-12-04",
+    "startTime": "19:30",
+    "city": null,
+    "venue": null,
+    "ticketUrl": null,
+    "sourceUrl": "https://www.divadlodobeska.cz/",
+    "sourceName": "Divadlo Dobeška",
+    "sourceType": "venue",
+    "sources": [
+      {
+        "name": "Divadlo Dobeška",
+        "url": "https://www.divadlodobeska.cz/"
+      }
+    ],
+    "discoveredAt": "2026-11-17T12:36:55.552Z",
+    "confidence": "high",
+    "evidence": "Divadlo Dobeška Scéna divadla Sklep Aktuálně Program Vstupenky Kurzy Výstavy Bar Pronájem Divadlo Sklep Kontakt Přihlásit Registrovat Košík (0 Kč) Novinky | Nejbližší program 4. 12. 2026 | 19:30 | Koncert Jiří Schmitzer Koncert originálního písničkáře 5. 12. 2026 | 16:30 | České tradice Mikulášská pumelice s divadlem Nosálci Tradiční mikulášský program s nadílkou pro děti. Pohádka Om a Oma slaví Vánoce divadelní společnosti Nosálci a poté přijde Mik 11. 12. 2026 | 16:00 | vánoční trhy Vánoční tr",
+    "status": "unverified"
   }
 ]
