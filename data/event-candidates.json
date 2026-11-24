@@ -117,5 +117,51 @@
     "confidence": "high",
     "evidence": "Divadlo Dobeška Scéna divadla Sklep Aktuálně Program Vstupenky Kurzy Výstavy Bar Pronájem Divadlo Sklep Kontakt Přihlásit Registrovat Košík (0 Kč) Novinky | Nejbližší program 4. 12. 2026 | 19:30 | Koncert Jiří Schmitzer Koncert originálního písničkáře 5. 12. 2026 | 16:30 | České tradice Mikulášská pumelice s divadlem Nosálci Tradiční mikulášský program s nadílkou pro děti. Pohádka Om a Oma slaví Vánoce divadelní společnosti Nosálci a poté přijde Mik 11. 12. 2026 | 16:00 | vánoční trhy Vánoční tr",
     "status": "unverified"
+  },
+  {
+    "id": "2026-12-04-frantisek-skala-and-traskava-smes-frantisek-skala-and-traskava-smes-12-2-2027-19-30-d",
+    "title": "František Skála & Třaskavá směs 12. 2. 2027 19:30 Divadlo Dobeška Koncert Juicebox 31. 3. 2027 20:00 Kabinet múz Koncert",
+    "project": "František Skála & Třaskavá směs",
+    "date": "2026-12-04",
+    "startTime": "20:00",
+    "city": null,
+    "venue": null,
+    "ticketUrl": null,
+    "sourceUrl": "https://art.ceskatelevize.cz/kulturni-prehled/",
+    "sourceName": "ČT art – Kulturní přehled",
+    "sourceType": "aggregator",
+    "sources": [
+      {
+        "name": "ČT art – Kulturní přehled",
+        "url": "https://art.ceskatelevize.cz/kulturni-prehled/"
+      }
+    ],
+    "discoveredAt": "2026-11-24T14:23:44.872Z",
+    "confidence": "medium",
+    "evidence": "Kulturní přehled – ČT art – Česká televize Toggle navigation Česká televize Zpravodajství Sport iVysílání TV program Pro děti edu Vše o ČT PROGRAM ČT ART témata Divadlo Film Hudba Literatura Podcast Společnost Tanec Televize Výtvarné umění rubriky Apel ARTELIER Artchiv Artoulky ČT art kvíz Divadelní glosář Fenomén Večerníček Jedna báseň Kulturní média online Máte knihovnu? A mohla bych ji vidět? Praha Berlín Waršava: Závod míru Procento na kulturu Redaktoři Seriálová dávka Sound & Stories TV tip",
+    "status": "unverified"
+  },
+  {
+    "id": "unknown-date-frantisek-skala-and-provodovjane-frantisek-skala-and-provodovjane-predvanocni-konce",
+    "title": "František Skála & Provodovjané – předvánoční koncert s tancovačkou Kulturní dům Barikádníků · Prague Exhibitions_paintin",
+    "project": "František Skála & Provodovjané",
+    "date": null,
+    "startTime": "18:00",
+    "city": null,
+    "venue": null,
+    "ticketUrl": null,
+    "sourceUrl": "https://www.buytickets.cz/",
+    "sourceName": "BuyTickets.cz",
+    "sourceType": "ticket_seller",
+    "sources": [
+      {
+        "name": "BuyTickets.cz",
+        "url": "https://www.buytickets.cz/"
+      }
+    ],
+    "discoveredAt": "2026-11-24T14:23:44.872Z",
+    "confidence": "medium",
+    "evidence": "BuyTickets.cz — Live shows in the Czech Republic Live music · Czech Republic Find your next loud night. 564 upcoming shows across Prague, Brno, Plzeň and beyond. Rock, metal, alternative, electronic. Updated every hour. ★ Featured show Gospel Vánoční benefiční koncert Kufřík plný světla DEC 1 Tue 18:00 Pražská křižovatka · Prague Get tickets price 5800 CZK Tonight 28 shows Nov 24 Tue 13:00 Koncert vážné hudby Lobkowiczký palác na Pražském hradě · Prague Classical from 500–830 CZK Nov 24 Tue 16:3",
+    "status": "unverified"
   }
 ]
